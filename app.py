@@ -95,6 +95,7 @@ with st.sidebar:
             except Exception as exc:
                 st.error(f"Could not delete stored vectors: {exc}")
 
+ 
         if st.button("Clear chat", use_container_width=True):
             st.session_state.chat_history = []
             st.rerun()
